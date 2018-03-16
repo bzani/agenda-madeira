@@ -1,0 +1,68 @@
+<?php include(ST_TM_HEADER); ?>
+
+<?php 
+    $params = $this->getParams();
+    $contacts = $params['contacts'];
+?>
+
+<header>
+    <div class="row">
+        <div class="col-sm-6">
+            <h2><?php echo LBL_TT_LIST; ?></h2>
+        </div>
+        <div class="col-sm-6 text-right h2" style="padding-top:20px;">
+            <a class="btn btn-primary" href="?controle=Contact&acao=contactManag">
+                <i class="fa fa-plus"></i> <?php echo LBL_BT_NEW;?>
+            </a>
+            <a class="btn btn-default" href="?controle=Contact&acao=contactList">
+                <i class="fa fa-refresh"></i> <?php echo LBL_BT_REFRESH;?>
+            </a>
+        </div>
+    </div>
+</header>
+
+<hr>
+
+<table class="table table-hover">
+<thead>
+    <tr>
+        <th><?php echo LBL_TB_CL_ID; ?></th>
+        <th width="30%"><?php echo LBL_TB_CL_NAME; ?></th>
+        <th><?php echo LBL_TB_CL_EMAIL; ?></th>
+        <th><?php echo LBL_TB_CL_PHONE; ?></th>
+        <th style="text-align:right;"><?php echo LBL_TB_CL_ACTIONS; ?>&nbsp;</th>
+    </tr>
+</thead>
+<tbody>
+<?php if ($contacts) : ?>
+<?php foreach($contacts AS $contact) : ?>
+    <tr>
+        <td><?php echo $contact->getId()?></td>
+        <td><?php echo $contact->getName()?></td>
+        <td><?php echo $contact->getEmail()?></td>
+        <td>
+            <span class="bfh-phone" data-format="(dd) ddddd-dddd"
+                 data-number="<?php echo $contact->getPhone()?>"></span>
+        </td>
+        <td class="actions text-right">
+            <!--<a href="#" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Visualizar</a>-->
+            <a href="?controle=Contact&acao=contactManag&id=<?php echo $contact->getId()?>" 
+                class="btn btn-sm btn-warning">
+                <i class="fa fa-pencil"></i> <?php echo LBL_TB_BT_EDIT; ?>
+            </a>
+            <a href="?controle=Contact&acao=apagarContato&id=<?php echo $contact->getId()?>" 
+                class="btn btn-sm btn-danger">
+                <i class="fa fa-trash"></i> <?php echo LBL_TB_BT_DELETE; ?>
+            </a>
+        </td>
+    </tr>
+<?php endforeach; ?>
+<?php else : ?>
+    <tr>
+        <td colspan="6">Nenhum registro encontrado.</td>
+    </tr>
+<?php endif; ?>
+</tbody>
+</table>
+
+<?php include(ST_TM_FOOTER); ?>

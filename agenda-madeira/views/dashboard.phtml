@@ -1,0 +1,25 @@
+<?php include(ST_TM_HEADER); ?>
+<link rel="stylesheet" href="<?php echo ST_PT_VENDOR; ?>css/mdb.min.css">
+
+<h2><?php echo LBL_TT_DASHB;?></h2>
+
+<div class="container text-center">    
+<form id="dashboard">
+  <br><br>
+  <div class="row">
+    <div class="col-sm-6">
+      <canvas id="polarChart"></canvas>
+      <br>
+      <p><b>Volume Anual de Cadastros</b></p>
+    </div>
+    <div class="col-sm-6"> 
+      <canvas id="radarChart"></canvas>
+      <br>
+      <p><b>Adesão de Social Media por Região</b></p>
+    </div>
+  </div>
+</form>
+</div><br>
+
+<?php include(ST_TM_FOOTER); ?>
+<script src="js/dashboard.js"></script>

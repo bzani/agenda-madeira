@@ -1,0 +1,49 @@
+<?php include(ST_TM_HEADER); ?>
+<?php
+    $params = $this->getParams();
+    $contact = $params['contact'];
+?>
+
+<h2><?php echo LBL_TT_MAINT;?></h2>
+
+<form id="maintenance" method="post" onsubmit="return validateForm();">
+  <hr />
+  <div class="row">
+
+    <div class="form-group col-md-6">
+      <label for="name"><?php echo LBL_TB_CL_NAME2;?></label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="Ex.: João da Silva"
+           value="<?php echo  $contact->getName(); ?>">
+    </div>
+
+    <div class="form-group col-md-4">
+      <label for="campo2"><?php echo LBL_TB_CL_EMAIL;?></label>
+      <input type="text" class="form-control" name="email" id="email" placeholder="Ex.: joao@silva.com"
+            value="<?php echo  $contact->getEmail(); ?>">
+    </div>
+
+    <div class="form-group col-md-2">
+      <label for="campo2"><?php echo LBL_TB_CL_PHONE;?></label>
+      <input type="text" class="form-control input-medium bfh-phone" id="phone" name="phone" 
+            data-format="(dd) ddddd-dddd" data-number="<?php echo $contact->getPhone(); ?>"
+            value="<?php echo $contact->getPhone(); ?>">
+    </div>
+
+  </div>
+  <div id="actions" class="row">
+    <div class="col-md-12">
+        <input type='hidden' id='controle' name='controle' value='Contact'>
+        <input type='hidden' id='acao' name='acao' value='contactManag'>
+        <input type='hidden' id='id' name='id' value='<?php echo $contact->getId()?>'>
+        <button id="enviar" type="submit" class="btn btn-primary">
+            <?php echo LBL_TB_BT_SAVE;?>
+        </button>
+        <a href="?controle=Contact&acao=contactList" class="btn btn-default">
+            <?php echo LBL_TB_BT_CANCEL;?>
+        </a>
+    </div>
+  </div>
+</form>
+
+<?php include(ST_TM_FOOTER); ?>
+<script src="js/formValidation.js"></script>
