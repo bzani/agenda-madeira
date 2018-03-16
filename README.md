@@ -28,11 +28,11 @@ com recursos gráficos para aprimorar a análise e gestão de sua base de dados.
 # Como Utilizar
     
 A interface da aplicação Agenda Telefonica Madeira é intuitiva e de fácil utilização.
-Na página inicial, é possível navegar pelos Menus da Agenda.
-Na página de Contatos, temos uma lista de contatos cadastrados e ações de manutenção 
+Na página inicial, é possível navegar pelos menus da Agenda.
+No menu de Contatos, temos uma lista de contatos cadastrados e ações de manutenção 
 (edição e exclusão de cadastro).
-Na página Dashboard, contamos com recursos de amparo a análise e gestão de dados (gráficos)
-Na página Sobre, temos uma breve informação sobre o aplicativo.
+No menu Dashboard, contamos com recursos de amparo à análise e gestão de dados (gráficos).
+No menu Sobre, temos uma breve informação sobre o aplicativo.
     
     
 # Especificação Funcional
@@ -76,7 +76,7 @@ Foi utilizado conceito de arquitetura MVC para separação das camadas do projet
 A camada de controle faz a gestão da navegação das páginas, de conteúdo e intermedia o acesso à base de dados, que por sua vez tem sua implementação extendida pelas classes da 
 camada de Modelo.
 Na camada Model, além da gestão de acesso à base, são compreendidos também recursos de validação e persistência dos dados, uma vez já tratados inicialmente no front-end. 
-A camada View compreende as telas (corpo) da aplicação, o cabeçalho e rodapé das página (conteúdo fixo e declaração de recursos css/js) e também a classe responsável por renderizar e parametrizar os dados de operação da aplicação.
+A camada View compreende as telas (corpo) da aplicação, o cabeçalho e rodapé das páginas (conteúdo fixo e declaração de recursos css/js) e também a classe responsável por renderizar e parametrizar os dados de operação da aplicação.
 A página index.php é encarregada de acionar o dispatcher e iniciar a execução da aplicação.
 O arquivo global.php possui todas as definições globais do projeto e padrões, centralizando conteúdo textual, dados de configuração do projeto e demais informações.
 
