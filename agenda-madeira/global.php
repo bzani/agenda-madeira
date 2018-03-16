@@ -7,6 +7,14 @@
 
 
 	/** 
+	*	Database    ==> ALTERAR EM CASO DE SERVIDOR ONLINE <==
+	*/
+	define('DB_NAME', 'agenda_madeira');
+	define('DB_USER', 'root');
+	define('DB_PASS', '');
+	define('DB_HOST', 'localhost');
+
+	/** 
 	*	Labels 
 	*/
 	define("LANG", "pt");
@@ -38,14 +46,6 @@
 	}
 
 	/** 
-	*	Database
-	*/
-	define('DB_NAME', 'agenda_madeira');
-	define('DB_USER', 'root');
-	define('DB_PASS', '');
-	define('DB_HOST', 'localhost');
-
-	/** 
 	*	Sistema
 	*/
 	if (!defined('ABSPATH'))
@@ -62,7 +62,7 @@
 	define('ST_PT_VENDOR', BASEURL.'vendor/bootstrap/');
 
 	/** 
-	*	Controle
+	*	Controles
 	*/
 	define('TRACE', false);
 

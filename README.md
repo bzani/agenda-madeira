@@ -1,6 +1,6 @@
 # Sobre a aplicação
     
-A Agenda Telefonica Madeira possui funcionalidades de cadastro e manutenção de contatos
+A Agenda Telefônica Madeira possui funcionalidades de cadastro e manutenção de contatos
 em uma interface amigável e responsiva, em formato de agenda de contatos, além disso, conta 
 com recursos gráficos para aprimorar a análise e gestão de sua base de dados.
         
@@ -12,14 +12,16 @@ com recursos gráficos para aprimorar a análise e gestão de sua base de dados.
     2. Iniciar serviços do Apache e MySQL no XAMPP
         obs: se necessário, configurar porta para acesso no navegador ('httpd.conf' do Apache)
     3. Executar no console mySQL (ou phpMyAdmin) o script 'create-db.sql' da pasta \scripts\
-    4. Acessar o aplicativo pelo localhost no navegador:
+    4. Copiar pasta da aplicação \agenda-madeira\ para o diretório raiz do servidor \xampp\htdocs\
+    5. Acessar a aplicação pelo localhost no navegador:
         http://localhost/agenda-madeira
 
 ## Online
 
     1. Executar o script 'create-db.sql' da pasta \scripts\ no mySQL de seu servidor
     2. Upload da pasta da aplicação \agenda-madeira\ para o diretório raiz do servidor
-    3. Abrir no navegador a URL da aplicação
+    3. Alterar arquivo 'global.php' com as informações do hosting para conexão da base de dados
+    4. Abrir no navegador a URL da aplicação
         http://<url>/agenda-madeira
         
         
