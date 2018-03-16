@@ -70,23 +70,17 @@ Implemente uma agenda telefônica que atenda aos seguintes requisitos técnicos 
 
 ## Detalhes da Implementação
 
-    Foi utilizado conceito de arquitetura MVC para separação das camadas do projeto, para
-    atender a boas práticas e otimizar estruturação e qualidade de código. 
-    A camada de controle faz a gestão da navegação das páginas, de conteúdo e intermedia o 
-    acesso à base de dados, que por sua vez tem sua implementação extendida pelas classes da 
-    camada de Modelo.
-    Na camada Model, além da gestão de acesso à base, são compreendidos também recursos de 
-    validação e persistência dos dados, uma vez já tratados inicialmente no front-end. 
-    A camada View compreende as telas (corpo) da aplicação, o cabeçalho e rodapé das página
-    (conteúdo fixo e declaração de recursos css/js) e também a classe responsável por renderizar
-    e parametrizar os dados de operação da aplicação.
-    A página index.php é encarregada de acionar o dispatcher e iniciar a execução da aplicação.
-    O arquivo global.php possui todas as definições globais do projeto e padrões, centralizando
-    conteúdo textual, dados de configuração do projeto e demais informações.
+Foi utilizado conceito de arquitetura MVC para separação das camadas do projeto, para atender a boas práticas e otimizar estruturação e qualidade de código.
+A camada de controle faz a gestão da navegação das páginas, de conteúdo e intermedia o acesso à base de dados, que por sua vez tem sua implementação extendida pelas classes da 
+camada de Modelo.
+Na camada Model, além da gestão de acesso à base, são compreendidos também recursos de validação e persistência dos dados, uma vez já tratados inicialmente no front-end. 
+A camada View compreende as telas (corpo) da aplicação, o cabeçalho e rodapé das página (conteúdo fixo e declaração de recursos css/js) e também a classe responsável por renderizar e parametrizar os dados de operação da aplicação.
+A página index.php é encarregada de acionar o dispatcher e iniciar a execução da aplicação.
+O arquivo global.php possui todas as definições globais do projeto e padrões, centralizando conteúdo textual, dados de configuração do projeto e demais informações.
 
 # Contato
 Mais informações, dúvidas ou sugestões, favor entrar em contato:
 * Email: ubzani@gmail.com
-* Phone: 41 99958-2209
+* Linkedin: https://www.linkedin.com/in/bruno-zani-b7323894/
         
 OBRIGADO!!!
