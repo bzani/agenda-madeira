@@ -79,8 +79,7 @@ A página index.php é encarregada de acionar o dispatcher e iniciar a execuçã
 O arquivo global.php possui todas as definições globais do projeto e padrões, centralizando conteúdo textual, dados de configuração do projeto e demais informações.
 
 # Contato
+
 Mais informações, dúvidas ou sugestões, favor entrar em contato:
 * Email: ubzani@gmail.com
 * Linkedin: https://www.linkedin.com/in/bruno-zani-b7323894/
-        
-OBRIGADO!!!
