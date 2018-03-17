@@ -19,9 +19,10 @@ com recursos gráficos para aprimorar a análise e gestão de sua base de dados.
 ## Online
 
     1. Executar o script 'create-db.sql' da pasta \scripts\ no mySQL de seu servidor
-    2. Upload da pasta da aplicação \agenda-madeira\ para o diretório raiz do servidor
-    3. Alterar arquivo 'global.php' com as informações do hosting para conexão da base de dados
-    4. Abrir no navegador a URL da aplicação
+    2. Crie um usuário com permissões para acessar esta base de dados no servidor Online
+    3. Upload da pasta da aplicação \agenda-madeira\ para o diretório raiz do servidor
+    4. Alterar arquivo 'global.php' com as configurações realizadas na base de dados (DB_NAME, DB_USER e DB_PASS)
+    5. Abrir no navegador a URL da aplicação
         http://<url>/agenda-madeira
         
         
