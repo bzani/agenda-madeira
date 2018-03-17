@@ -46,8 +46,10 @@
                 $contact->setEmail(ValidationModel::cleanString($_POST['email']));
                 $contact->setPhone(ValidationModel::cleanString($_POST['phone']));
                   
-                if($contact->save() > 0)
-                    ApplicationController::redirect('?controle=Contact&acao=contactList');
+                if($contact->save() > 0) {
+                    header("Location: ?controle=Contact&acao=contactList");
+                    //ApplicationController::redirect('?controle=Contact&acao=contactList');
+                }
             }
                   
             $view = new RenderView('views/contactManag.phtml');
@@ -64,7 +66,8 @@
                 $contact = new ContactModel();
                 $contact->contactInfo($_GET['id']);
                 $contact->delete();
-                ApplicationController::redirect('?controle=Contact&acao=contactList');
+                header("Location: ?controle=Contact&acao=contactList");
+                //ApplicationController::redirect('?controle=Contact&acao=contactList');
             }   
         }
     }
