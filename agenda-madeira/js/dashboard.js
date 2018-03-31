@@ -15,7 +15,7 @@ var myPolarChart = new Chart(ctxPA, {
     },
     options: {
         responsive: true
-    }    
+    }
 });
 
 //radar
@@ -49,5 +49,5 @@ var myRadarChart = new Chart(ctxR, {
     },
     options: {
         responsive: true
-    }    
+    }
 });

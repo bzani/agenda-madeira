@@ -1,21 +1,19 @@
 <?php
-	
-	/**
-	* 	Verifica e apresenta erros eventuais
-	*/
 
-	ini_set('display_errors', 1);
+/**
+*     Verifica e apresenta erros eventuais
+*/
 
-	error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
-	/**
-	* 	Carrega e inicia aplicação
-	*/
-	require_once 'global.php';
-	require_once 'controllers/ApplicationController.php';
+error_reporting(E_ALL);
 
-	$app = new ApplicationController();
+/**
+*     Carrega e inicia aplicação
+*/
+require_once 'global.php';
+require_once 'controllers/ApplicationController.php';
 
-	$app->dispatch();
+$app = new ApplicationController();
 
-?>
+$app->dispatch();
